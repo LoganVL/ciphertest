@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="main">
+        <div class="left">
+            <img src="./img/encryptor.png" class="logo_img">
+        </div>
+        <div class="right">
+            <div class="right_box">
+                <div class="swap-button" id="swapbtn" onclick="swapFunction()">
+                    <img src="./img/updateFn.png" alt="">
+                    <p>Swap</p>
+                </div>
+                <div class="function-box">
+                    <form>
+                        <label for="functionInput" class="function_input-text" id="currentFn">To Encrypt</label>
+                        <input type="text" id="functionInput" oninput="encryptAndDisplay()" />
+                    </form>
+                </div>
+                <div class="result_box">
+                    <h1> Result:</h1>
+                    <div id="result_output"></div>
+                    <div id="copyresult" onclick="copy()">Copy</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>
